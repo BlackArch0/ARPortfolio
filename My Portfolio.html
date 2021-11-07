@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="skill.js">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link 
+       rel="stylesheet" 
+	      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+			<section>
+				<header>
+			<nav>
+				<div class="logo" id="logo"> <h1> Portfolio </h1></div>
+				
+					<ul>
+						<li> <a href="#Home"> Home </a> </li>
+						<li> <a href="#About"> About </a> </li>
+						<li> <a href="#Skills"> Skills </a> </li>
+						<li> <a href="#Feedback"> Feedback </a> </li>
+						</ul>
+			</nav>
+			</header>
+			</section>
+			<section class="mobile-nav">
+				<div class="logo" id="logo"> <h1> Portfolio </h1></div>
+			<div id="toggle"></div>
+			<div id="sidebar">
+			<ul>
+				<li> <a href="#Home"> Home </a> </li>
+				<li> <a href="#About"> About </a> </li>
+				<li> <a href="#Skills"> Skills </a> </li>
+				<li> <a href="#Feedback"> Feedback </a> </li>
+				</ul>
+			</div>
+			<script>
+				const toggle = document.getElementById('toggle');
+				const sidebar = document.getElementById('sidebar')
+				
+				document.onclick = function(e){
+					if(e.target.id !== 'sideber' && e.target.id !== 'toggle')
+					{
+						toggle.classList.remove('active');
+					sidebar.classList.remove('active')
+					}						
+				}
+				
+				
+				
+				toggle.onclick = function(){
+					toggle.classList.toggle('active');
+					sidebar.classList.toggle('active')
+
+				}
+			</script>
+			</section>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+<!--==============HOME===================-->
+<section class="Home" id="Home">
+<div class="active">
+<div class="h-text animate__animated animate__zoomIn">
+<h1>Hey.... <br>
+	I'm AR Shaikh</h1>
+<h5>I'm A Front-End UX Designer From Gujrat</h5>    
+<p> I'm Happy To See U R There! Check My Portfolio,</p><br><p> Follow Me On Instagram,Check Out Some Videos On Youtube And Have A Fun</p>
+<img class="user" src="user2.jpg">
+<img class="user3" src="user3.jpg">
+</div>
+</div>
+</div>
+</section>
+<!--==============END HOME===================-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--================ABOUT=====================-->
+<section class="About" id="About">
+<h1>About</h1>
+<span> I'm A BCA Student,I Like Creating Portfolios And Also I'm Front-End UX Designer </span> <br>
+<span> From Gujrtat</span>
+</section>
+ <!--================END ABOUT=====================-->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <!--=======SKILLS SECTION============-->
+<section class="Skills" id="Skills">
+	<h1> skills </h1>
+<div class="skill-conatiner">
+<div class="skill-bars">
+<li class="html"> html </li>
+<li class="photoshop"> photoshop </li>
+<li class="css"> css </li>
+</div>
+</div>
+</section>
+<br>
+<br>
+<!--=======END SKILLS SECTION============-->
+<!--==============Feedback Section===================-->
+<section class="Feedback" id="Feedback">
+	<title> Feedback </title>
+	<div class="container">
+		<form action="https://formspree.io/f/xknklkad" method="POST">
+			
+
+			<div class="form-group">
+				<label for="firstName">First Name</label>
+				<input type="text" id="firstName" name="firstName">
+			</div>
+
+			<div class="form-group">
+				<label for="lastName">Last Name</label>
+				<input type="text" id="lastName" name="lastName">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email">
+			</div>
+        
+            <div class="form-group">
+				<label for="massage">Massage</label>
+				<textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+			</div>
+
+
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<div id="status"></div>
+</section>
+<br>
+<br>
+<!--==============FOOTER===================-->
+<div class="footer" id="footer">
+<footer>
+	<p>copyright &copy;2021 designed by   AR Shaikh</p>
+</footer>
+</div>
+<!--==============END FOOTER===================-->
+
+<div class="icon">
+	<a href="https://www.instagram.com/ig_blackarch">
+	<i class="fab fa-instagram-square"></i> </a>
+	<a href="https://www.youtube.com/channel/UCxoE61yxtjM3hhbHXmgZ3yA">
+	<i class="fab fa-youtube"></i> </a>
+	</div>
+</body>
+</html>
