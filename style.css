@@ -162,7 +162,7 @@ a.active,a:hover{
   .About h1{
   text-align: center;
   }
- .About span{
+ .About span a1{
     background:#222;
     color:#fff;
     display:block;
