@@ -112,6 +112,7 @@ a.active,a:hover{
     line-height: 80px;
     font-size: 3em;
     position: fixed;
+    background: #0082e6;
   }
   #sidebar{
     position: fixed;
