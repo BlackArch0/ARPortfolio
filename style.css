@@ -113,6 +113,8 @@ a.active,a:hover{
     font-size: 3em;
     position: fixed;
     background: #0082e6;
+    height: 100px;
+    weight: 100%;
   }
   #sidebar{
     position: fixed;
