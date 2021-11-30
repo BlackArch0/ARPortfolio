@@ -111,6 +111,7 @@ a.active,a:hover{
   .logo h1{
     line-height: 80px;
     font-size: 3em;
+    position: fixed;
   }
   #sidebar{
     position: fixed;
