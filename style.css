@@ -2,7 +2,6 @@
 * {
 margin: 0;
 padding: 0;
-box-sizing: border-box
 }
 
 
@@ -200,6 +199,7 @@ a.active,a:hover{
 .container {
   width: 100%;
   background-color: #ddd;
+  box-sizing: border-box;
 }
 
 .skills {
@@ -251,6 +251,7 @@ a.active,a:hover{
 }
 .container2 {
   width: 90%;
+  box-sizing: border-box;
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
