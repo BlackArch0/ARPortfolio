@@ -27,6 +27,9 @@ html{
 .user3{
   display: none;
 }
+ .Ht p{
+     text-align: center;
+  }
 .logo h1{
   line-height: 80px;
   font-size: 3em;
