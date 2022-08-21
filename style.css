@@ -29,6 +29,7 @@ html{
 }
  .Ht p{
      text-align: center;
+   margin-inline: 55px 10px;
   }
 .logo h1{
   line-height: 80px;
@@ -163,6 +164,7 @@ a.active,a:hover{
 
 
   .About h1{
+  
   text-align: center;
   }
 
