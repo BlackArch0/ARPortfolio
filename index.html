@@ -1,176 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Portfolio</title>
-<link rel="stylesheet" href="style.css">
-
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link 
-       rel="stylesheet" 
-	      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width">
+  <title>Simple Chat Bot</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
 </head>
 <body>
-			<section>
-				<header>
-			<nav>
-				<div class="logo" id="logo"> <h1> Portfolio </h1></div>
-				
-					<ul>
-						<li> <a href="#Home"> Home </a> </li>
-						<li> <a href="#About"> About </a> </li>
-						<li> <a href="#Skills"> Skills </a> </li>
-						<li> <a href="#Feedback"> Feedback </a> </li>
-						<li> <a href="https://islamictune.000webhostapp.com/index.html" target="_blank">My WebSites</a></li>
-						</ul>
-			</nav>
-			</header>
-			</section>
-			<section class="mobile-nav">
-				<div class="logo" id="logo"> <h1> Portfolio </h1></div>
-			<div id="toggle"></div>
-			<div id="sidebar">
-			<ul>
-				<li> <a href="#Home"> Home </a> </li>
-				<li> <a href="#About"> About </a> </li>
-				<li> <a href="#Skills"> Skills </a> </li>
-				<li> <a href="#Feedback"> Feedback </a> </li>
-				<li> <a href="https://islamictune.000webhostapp.com/index.html" target="_blank">My WebSites</a></li>
-				</ul>
-			</div>
-			<script>
-				const toggle = document.getElementById('toggle');
-				const sidebar = document.getElementById('sidebar')
-				
-				document.onclick = function(a){
-					if(a.target.id !== 'sideber' && a.target.id !== 'toggle')
-					{
-						toggle.classList.remove('active');
-					sidebar.classList.remove('active')
-					}						
-				}
-				
-				
-				
-				toggle.onclick = function(){
-					toggle.classList.toggle('active');
-					sidebar.classList.toggle('active')
-
-				}
-			</script>
-			</section>
-			<br>
-			<br>
-			<br>
-<!--==============HOME===================-->
-<section class="Home" id="Home">
-<div class="active">
-<div class="h-text animate__animated animate__zoomIn">
-<h1>Hey.... <br>
-	I'm AR Shaikh</h1>
-<h5>I'm A Front-End Web Developer From Gujrat</h5>    
-<p> I'm Happy To See U R There! Check My Portfolio,</p><br><p> Follow Me On Instagram,Check Out Some Videos On Youtube And Have A Fun</p>
-<img class="user" src="Screenshot_2022_0815_082528.png">
-<img class="user3" src="Screenshot_2022_0815_082528.png">
-</div>
-</div>
-</section>
-<!--==============END HOME===================-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--================ABOUT=====================-->
-<section class="About" id="About">
-<h1>About</h1>
-	<div class="Ht">
-<p> I'm A BCA Student,I Like Creating Videos And Also I'm Front-End Web Developer
-From Gujarat <br>And I'm That Rising Developer,Who Is Skilled In HTML And CSS <br>
-		Thanks For Visiting My Website</p>
-	</div>
-</section>
- <!--================END ABOUT=====================-->
- <br>
- <br>
- <br>
- <br>
- <br>
- <!--=======SKILLS SECTION============-->
-<section class="Skills" id="Skills">
-	<h1>My Skills</h1>
-
-<p>HTML</p>
-<div class="container">
-  <div class="skills html">90%</div>
-</div>
-
-<p>CSS</p>
-<div class="container">
-  <div class="skills css">50%</div>
-</div>
-
-<p>JavaScript</p>
-<div class="container">
-  <div class="skills js">35%</div>
-</div>
-
-<p>Photoshop </p>
-<div class="container">
-  <div class="skills Photoshop">30%</div>
-</div>
-</section>
-<br>
-<br>
-<!--=======END SKILLS SECTION============-->
-<!--==============Feedback Section===================-->
-<section class="Feedback" id="Feedback">
-	<h1> Feedback </h1>
-	<div class="container2">
-		<form action="" method="POST">
-			
-
-			<div class="form-group">
-				<label for="firstName">First Name</label>
-				<input type="text" id="firstName" name="firstName">
-			</div>
-
-			<div class="form-group">
-				<label for="lastName">Last Name</label>
-				<input type="text" id="lastName" name="lastName">
-			</div>
-
-			<div class="form-group">
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email">
-			</div>
-        
-            <div class="form-group">
-				<label for="massage">Massage</label>
-				<textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-			</div>
-
-
-			<button type="submit">Submit</button>
-		</form>
-	</div>
-	<div id="status"></div>
-</section>
-<br>
-<br>
-<!--==============FOOTER===================-->
-<div class="footer" id="footer">
-<footer>
-	<p>copyright &copy;2021 designed by   AR Shaikh</p>
-</footer>
-</div>
-<!--==============END FOOTER===================-->
-
-<div class="icon">
-	<a href="https://www.instagram.com/ig_blackarch">
-	<i class="fab fa-instagram-square"></i> </a>
-	<a href="https://www.youtube.com/channel/UCxoE61yxtjM3hhbHXmgZ3yA">
-	<i class="fab fa-youtube"></i> </a>
-	</div>
+  <h1 class="lg">HotelAI</h1>
+  <li class="rules" style="color: bisque;
+  width: 400px;" >Rules </li>
+  <li style="color: bisque;
+  width: 400px;">Use Lowercase Keywords </li>
+  <li style="color: bisque;
+  width: 400px;">Don't Use Bad Words</li>
+  <div id="chatlog">
+    <script class="font" src="welcome.js"></script>
+    
+    
+  </div>
+  <script>
+    function submitChat() {
+      var input = $('#input').val();
+      $.post("chatbot.php", {text: input}, function(data) {
+        $("#chatlog").append(data);
+        $("#input").val("");
+      });
+    }
+  </script>
+  <div class="flexContainer">
+    
+    <input type="text"class="inputField" id="input"><button type="submit" onclick="submitChat()" class="bt">Send</button>
+  </div>
+  
 </body>
 </html>
